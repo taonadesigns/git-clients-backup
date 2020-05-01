@@ -1,0 +1,163 @@
+.tn-forms-grid {
+    border-radius: 0;
+}
+
+.tn-forms-grid.panel-default .panel-heading {
+    background-color: transparent;
+}
+
+.tn-forms-grid .panel-heading .text-right {
+    margin-top: 5px;
+}
+
+.tn-forms-grid .panel-body {
+    padding: 0;
+}
+
+.tn-forms-grid .panel-body .table-bordered {
+    border-style: none;
+    margin: 0;
+}
+
+.tn-forms-grid .panel-body .table-bordered>thead>tr>th:first-of-type {
+    text-align: center;
+    width: 100px;
+}
+
+.tn-forms-grid .panel-body .table-bordered>thead>tr>th:last-of-type,
+.tn-forms-grid .panel-body .table-bordered>tbody>tr>td:last-of-type {
+    border-right: 0px;
+}
+
+.tn-forms-grid .panel-body .table-bordered>thead>tr>th:first-of-type,
+.tn-forms-grid .panel-body .table-bordered>tbody>tr>td:first-of-type {
+    border-left: 0px;
+}
+
+.tn-forms-grid .panel-body .table-bordered>tbody>tr:first-of-type>td {
+    border-bottom: 0px;
+}
+
+.tn-forms-grid .panel-body .table-bordered>thead>tr:first-of-type>th {
+    border-top: 0px;
+    border: none;
+}
+
+.tn-forms-grid table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tn-forms-grid td {
+    border: 1px solid black;
+}
+
+.scrollingTable {
+    overflow-y: auto;
+}
+
+.tn-forms-grid .panel-heading a {
+    color: #000000;
+    cursor: default !important;
+}
+
+.tn-forms-grid .panel-body table.table.table-bordered.table-list tbody tr:hover {
+    background-color: #FBCA56;
+}
+
+.tn-forms-grid .panel-footer .pagination {
+    margin: 0;
+}
+
+.modal-lg .modal-content .modal-body.quick-add-body {
+    min-height: 500px !important;
+}
+
+
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+
+.tn-forms-grid .panel-footer .col {
+    line-height: 34px;
+    height: 34px;
+}
+
+.tn-forms-grid .panel-heading .col h3 {
+    line-height: 30px;
+    height: 30px;
+}
+
+.tn-forms-grid .panel-body .table-bordered>tbody>tr>td {
+    line-height: 34px;
+    border-left: none;
+    border-right: none;
+    padding: 0px;
+}
+
+.subgrid-highlight {
+    background-color: #6699CC;
+}
+
+#mySubGrid {
+    font-size: 12px;
+}
+
+#mySubGrid thead {
+    background-color: #4a494e;
+    color: #ffffff;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background: none;
+    width: 25px;
+    top: 15px;
+}
+
+.carousel-control.left {
+    left: -5px;
+}
+
+.carousel-control.right {
+    right: -5px;
+}
+
+.carousel-inner {
+    padding-left: 30px;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content: "\e113";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    /* adjust as needed */
+    color: #212f66;
+    /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e114";
+    /* adjust as needed, taken from bootstrap.css */
+}
+
+.disableDropdown {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+label.checkbox-label [type="checkbox"] {
+    /* margin-left: -15px;
+    margin-top: -18px !important; */
+    margin-top: 5px !important;
+    margin-left: -20px !important;
+    position: absolute !important;
+}
+
+.checkbox-label {
+    margin: 5px 5px;
+}

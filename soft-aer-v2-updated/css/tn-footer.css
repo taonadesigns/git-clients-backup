@@ -1,0 +1,124 @@
+.logo-ifact {
+    padding-right: 2rem;
+}
+
+
+.tn-footer {
+    -webkit-transform: translate3d(0, 0, 0);
+    background: #cdccca;
+    border-top: 1px solid #cdccca;
+    height: 70px;
+    width: 100%;
+    color: #000000;
+    font-size: 0.6rem;
+    padding-left: 2rem;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.tn-footer .tn-footer-content a {
+    color: #fff;
+    font-size: 11px;
+}
+
+.tn-footer a {
+    color: #000000;
+    font-size: 11px;
+}
+
+.tn-copyright {
+    padding: 5px;
+}
+
+.tn-footer .tn-footer-content {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*FORMS*/
+
+.tn-forms-container .tn-footer.tn-myfooter ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cdccca;
+}
+
+.tn-forms-container .tn-footer.tn-myfooter ul li {
+    float: left;
+}
+
+.tn-forms-container .tn-footer.tn-myfooter ul li a {
+    display: block;
+    color: #212f66;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.tn-forms-container .tn-footer.tn-myfooter{
+    background-color: #aeb1b2;
+    height: 35px;
+    width: 100%;
+    color: #000000;
+    -ms-flex-align: center;
+    display: -ms-flexbox;
+    -ms-flex: 0 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+}
+
+.panel-footer .tn-subgrid-filter-footer{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.tn-subgrid-filter-footer .pagination li a{
+    position: relative;
+    float: left;
+    padding: 5px 5px;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+    font-size: 13px;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.row.tn-subgrid-filter-footer ul.pagination li.tn-subgrid-footer-sorting-links{
+    display: none;
+}
+
+.row.tn-subgrid-footer-summary .tn-subgrid-paging{
+    padding-left: 0;
+    font-size: 12px;
+}
+
+.row.tn-subgrid-footer-summary .tn-subgrid-page-navigation{
+    padding-right: 0;
+}
+
+.row.tn-subgrid-footer-summary .tn-subgrid-page-navigation li a{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.tn-table-footer-pagination{
+    height: 100%;
+}

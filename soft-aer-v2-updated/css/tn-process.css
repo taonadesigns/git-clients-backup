@@ -1,0 +1,150 @@
+#myNav li:not([disabled]) {
+    cursor: pointer;
+}
+
+.tn-process-container .tn-myfooter{
+    height: 35px;
+}
+
+.btn-process{
+    border-radius: 0;
+    font-size: 12px;
+    margin-right: 3px;
+    background-color: #212f66;
+    border-color: #212f66;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+body.tn-process-container {
+    overflow-y: scroll !important;
+}
+
+html {
+    overflow-y: scroll !important;
+}
+
+.ssl-container {
+    float: right;
+}
+
+.ssl {
+    display: block;
+    float: right;
+    font-size: 24px;
+    background: #EFEFEF;
+    padding: 14px;
+    border-radius: 35px;
+}
+
+.ssl-text {
+    display: block;
+    float: right;
+    padding: 10px 10px 0 10px;
+    color: #555;
+    text-align: center;
+}
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    /*z-index: 1;*/
+}
+
+ul.nav.nav-pills{
+    position: relative;
+}
+
+.step {
+    background: #eee;
+    /*font-size: 1em;*/
+    /*color: #ccc;*/
+    color: #696969;
+    /*padding: 15px;*/
+    padding: 7px;
+    /*font-size: 1.25em;*/
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #4a494e;
+}
+
+.li-nav.active .step {
+    background-color: #3bc9d6;
+    color: #0a0a0a;
+
+}
+
+.li-nav.active .step .caret {
+    color: #3bc9d6;
+}
+
+.li-nav.previous-active .step {
+    background-color: red;
+    color: #0a0a0a;
+
+}
+
+.li-nav.previous-active .step .caret {
+    color: red;
+}
+
+.step .caret {
+    position: absolute;
+    margin: 0;
+    color: #eee;
+    opacity: 1.0;
+}
+
+.step .caret.right {
+    right: 8px;
+    top: 0px;
+    border-top: 19px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 28px solid;
+}
+
+.step .caret.bottom {
+    bottom: -15px;
+    left: 35%;
+    border-top: 15px solid;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+@media (max-width: 991px) {
+    .step {
+        text-align: center;
+        margin-top: 20px;
+        height: 80px;
+    }
+
+    .step .caret.right {
+        top: 20px;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+    }
+}
+
+@media (max-width: 767px) {
+    .step {
+        height: auto;
+    }
+
+    .ssl-container {
+        float: none;
+        margin: 0 auto;
+        width: 220px;
+    }
+}
+
+@media (min-width: 768px) {
+    .step {
+        margin-right: 40px;
+    }
+}

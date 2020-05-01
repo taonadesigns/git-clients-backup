@@ -1,0 +1,122 @@
+.tn-treeview-body.tn-listing-table .tn-listing-wrapper .tn-listing-table {
+    position: relative;
+}
+
+.tn-treeview-body .tn-listing-header {
+    height: 100px;
+}
+
+.tn-treeview-body .tn-listing-table-header {
+    background-color: #4a494e;
+    color: #FFFFFF;
+    display: table;
+    position: unset;
+}
+
+body.tn-treeview-body {
+    background: #ffffff;
+    display: block;
+    color: black;
+}
+
+.treeview {
+    margin-top: 33px;
+}
+
+.tn-treeview-container {
+    text-align: left;
+    padding-left: 0;
+    font-size: 12px;
+    padding-right: 0;
+}
+
+.tn-treeview-body .tn-table-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tn-column-1 {
+    width: 35px;
+    background-color: yellow;
+    position: absolute;
+}
+
+.tn-treeview-table {
+    position: fixed;
+    top: 192px;
+    bottom: 60px;
+    /* left: 0; */
+    overflow: auto;
+    width: 82%;
+    /* margin: 2px; */
+    /* border: 2px solid red; */
+}
+
+.treeview ul {
+    position: fixed;
+    top: 95px;
+    bottom: 60px;
+    overflow: auto;
+    width: 16%;
+    white-space: nowrap;
+}
+
+.tn-treeview-table .row div {
+    display: inline-block;
+    width: 100px;
+}
+
+.tn-treeview-table thead tr {
+    background-color: #4a494e;
+    border-color: #4a494e;
+}
+
+.tn-treeview-table tbody tr:hover {
+    background-color: #FBCA56;
+}
+
+.tn-treeview-table tbody tr td, .tn-treeview-table thead tr th {
+    float: left;
+}
+
+.tn-treeview-table tbody tr {
+    height: 38px;
+    border: 0.5px solid #dddddd;
+}
+
+table.scroll {
+    width: 100%; /* Optional */
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    border: 2px solid black;
+}
+
+table.scroll tbody,
+table.scroll thead {
+    display: block;
+}
+
+/*thead tr th {*/
+/*height: 30px;*/
+/*line-height: 30px;*/
+/*/*text-align: left;*/
+/*}*/
+
+table.scroll tbody {
+    /*height: 100px;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody {
+    border-top: 2px solid black;
+}
+
+tbody td, thead th {
+    width: 20%; /* Optional */
+    /*border-right: 1px solid black;*/
+}
+
+tbody td:last-child, thead th:last-child {
+    border-right: none;
+}

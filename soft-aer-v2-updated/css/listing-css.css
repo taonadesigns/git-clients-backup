@@ -1,0 +1,51 @@
+.bt-listing-body{
+    padding-bottom: 0;
+}
+
+.bt-listing-body .tn-footer{
+    padding-left: 0;
+}
+
+
+/* Resets */
+*, *:after, *:before {
+    margin: 0; /* Margin zero is used to prevent unnecessary white space. */
+    padding: 0; /* Padding zero is used to prevent unnecessary white space. */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /* Border boxing is used, so the padding, margin and borders are within de width and height of de element. */
+}
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.table, .row, .cell {
+    outline: none;
+    border: none;
+    outline-style: none;
+    vertical-align: top;
+    text-align: left;
+}
+
+.table {
+    border-collapse: collapse;
+    display: table;
+    table-layout: fixed; /* This will ensure the cells within the table will keep there width. */
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+    width: 100%;
+}
+
+.cell {
+    display: table-cell;
+    white-space: nowrap; /* This property is used to show ellipses, when the content within de cell is overflown. */
+    overflow: hidden; /* This property is used to show ellipses, when the content within de cell is overflown. */
+    -ms-text-overflow: ellipsis; /* This property is used to show ellipses, when the content within de cell is overflown. */
+    -o-text-overflow: ellipsis; /* This property is used to show ellipses, when the content within de cell is overflown. */
+    text-overflow: ellipsis; /* This property is used to show ellipses, when the content within de cell is overflown. */
+}

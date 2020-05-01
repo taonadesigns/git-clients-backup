@@ -1,0 +1,830 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html,
+body {
+    margin: 0;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+label.error {
+    color: red !important;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+label.msg-error {
+    color: red !important;
+    font-size: 9px;
+    font-weight: 400;
+    display: block;
+}
+
+input.error {
+    border-color: red;
+}
+
+.tn-asterix:after {
+    color: red;
+    content: "*";
+    font-weight: bold;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.tn-content {
+    margin-top: 90px;
+    padding: 20px;
+    overflow-y: hidden;
+    position: fixed;
+    top: -30px;
+    bottom: 32px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
+input[type=text] {
+    outline: none;
+}
+
+.tn-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    color: #000000;
+    background: url(../images/45.gif) center no-repeat rgba(0, 0, 0, 0.3);
+    ;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    color: #4a494e;
+}
+
+a {
+    color: #FFBF5C;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.tn-textbox {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    padding: 10px 10px;
+    font-size: 14px;
+    background: #fff none;
+    border: 0.5px solid #ddd;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+label {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tn-quick-create-container {
+    padding: 0 !important;
+    margin-left: 30% !important;
+}
+
+.tn-quick-create-container .modal-dialog {
+    margin: 0 !important;
+}
+
+
+/*CHECKBOX*/
+
+input[type='checkbox'] {
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.scrollingTable table tbody input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.modal-lg .modal-content .modal-body .panel-default {
+    min-height: 450px;
+}
+
+.checkbox {
+    padding-top: 0 !important;
+    min-height: auto !important;
+    margin-bottom: 5px !important;
+}
+
+
+
+/*FORMS*/
+
+.disabledLeft {
+    float: left;
+    margin-left: -40px;
+}
+
+.disabledRight {
+    float: right;
+}
+
+.tn-scrollable-dropdown-container .input-group ul.dropdown-menu li.disabled ul {
+    list-style-type: none;
+}
+
+.tn-scrollable-dropdown-container .input-group ul.dropdown-menu li.disabled ul li {
+    display: inline-block;
+}
+
+#myDropdownSearch {
+    text-align: left;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.tn-forms h4.panel-title a:hover {
+    text-decoration: none;
+}
+
+.tn-forms h4.panel-title a {
+    text-decoration: none;
+}
+
+.tn-forms label {
+    color: #4a494e;
+}
+
+.noRecord td {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.tn-forms-container .btn.btn-primary.dropdown-toggle.tn-textbox {
+    text-align: left;
+}
+
+.tn-forms-container ul.dropdown-menu li a {
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+li.disabled a {}
+
+.tn-forms-container .tn-forms .dropdown.mydropdown .tn-textbox {
+    padding: 4px 10px;
+}
+
+.tn-forms-container .tn-forms .dropdown.mydropdown a {
+    color: #4a494e;
+}
+
+.tn-forms-container .tn-forms .dropdown.mydropdown a:hover {
+    text-decoration: none;
+}
+
+#formName {
+    color: #4a494e;
+}
+
+#formName:hover {
+    color: #4a494e;
+    text-decoration: none;
+}
+
+.tn-subgrid-panel-heading {}
+
+.tn-subgrid-header-action {
+    padding: 10px 0;
+}
+
+.tn-subgrid-header-action .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.tn-subgrid-header-action .text-right a {
+    font-size: 12px;
+}
+
+.tn-button-action .col-md-11 {
+    padding-left: 0;
+}
+
+.tn-button-action .col-md-12 {
+    padding-left: 0;
+}
+
+.tn-button-action .tn-close-form {
+    padding-right: 0;
+    text-align: right;
+}
+
+.tn-forms-grid .panel-footer {
+    padding: 0 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    ;
+}
+
+.tn-scrollable-dropdown {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.tn-forms {
+    position: fixed;
+
+    
+    left: 0px;
+    overflow: auto;
+    width: 100%;
+}
+
+.tn-forms .form-group {
+    margin-bottom: 0;
+}
+
+.tn-forms .form-group h3 {
+    margin-top: 0;
+}
+
+ul.nav-tabs li a {
+    color: #212f66;
+}
+
+.tn-forms ul.dropdown-menu {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+}
+
+.tn-forms .tn-scrollable-dropdown-container ul.dropdown-menu {
+    margin-bottom: 20px;
+}
+
+.tn-forms-container .tn-mytabs {
+    margin-top: 8px;
+}
+
+
+/* overriding bootstrap */
+
+.tn-forms-container .tn-mytabs .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #212f66;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+    cursor: default;
+    border-bottom: 3px solid #212f66;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tn-forms .panel-title {
+    font-size: 14px;
+}
+
+.tn-forms .panel-default>.panel-heading {
+    color: #212f66;
+    height: 42px;
+}
+
+.tn-forms-container .tn-mytabs .nav-tabs {
+    border-bottom: none;
+}
+
+.tn-forms-container .tn-mytabs .nav-tabs>li>a:hover {
+    border-color: #212f66;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.tn-forms .nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.tn-forms .btn-primary:active,
+.btn-primary.active,
+.open>.btn-primary.dropdown-toggle {
+    color: #000000;
+    background-color: transparent !important;
+    border-color: #4a494e !important;
+}
+
+.tn-forms .open>.btn-primary.dropdown-toggle:hover,
+.tn-forms .open>.btn-primary.dropdown-toggle:focus {
+    color: #000000;
+    background-color: transparent !important;
+    border-color: #4a494e !important;
+}
+
+.tn-forms-container .datepicker.datepicker-dropdown {
+    border-radius: 0 !important;
+}
+
+.tn-forms-container .datepicker table tr td.active.active {
+    border-radius: 0;
+    background: #212f66 linear-gradient(to bottom, #212f66, #212f66);
+}
+
+
+/* end overriding bootstrap */
+
+.panel-group .panel {
+    border-radius: 0;
+    border: none;
+}
+
+.panel-heading {
+    border-radius: 0;
+}
+
+.tn-myheader {}
+
+.tn-mytabs {
+    background-color: #e9ebeb !important;
+}
+
+.tn-mybody {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #e9ebeb !important;
+}
+
+.tn-myfooter {
+    background-color: #cdccca !important;
+}
+
+
+/*LISTING*/
+
+.tn-listing2 {
+    overflow-y: hidden;
+    position: relative;
+}
+
+.row {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+a.tn-quick-module-title,
+a.tn-quick-module-title i {
+    font-size: 13px;
+}
+
+.tn-listing-dropdown {
+    padding-left: 0;
+}
+
+.tn-listing-dropdown .dropdown {
+    margin-top: 6px;
+}
+
+.tn-listing-dropdown .dropdown a {
+    border-radius: 0;
+    border: 0.5px solid #dddddd;
+    font-size: 12px;
+    height: 36px;
+    color: #000000;
+    padding: 8px 20px;
+}
+
+.tn-listing-search {
+    padding: 10px;
+    width: 250px;
+    color: #f6f6f6;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 0;
+}
+
+.tn-listing-dropdown .dropdown ul li a {
+    border-radius: 0;
+    border: none;
+    font-size: 13px;
+    height: 22px;
+    color: #000000;
+    padding: 5px 20px;
+}
+
+.tn-listing-dropdown .dropdown a.tn-content-dropdown:hover {
+    text-decoration: none;
+}
+
+.tn-listing-search-div {
+    padding-right: 0;
+}
+
+.tn-table-footer-sorting-links {
+    display: none !important;
+    padding-top: 10px;
+}
+
+.tn-scrollable-dropdown-container ul.dropdown-menu li ul.tn-scrollable-dropdown li:hover {
+    background-color: #dddddd;
+}
+
+.tn-listing .tn-button-action .col-md-12 {
+    padding-left: 0;
+}
+
+
+/*NAVIGATION*/
+
+.tn-submenu-links {
+    display: none;
+}
+
+li.dropdown.tn-profile ul.dropdown-menu {
+    margin-top: 10px;
+}
+
+.mega-dropdown {
+    position: static !important;
+}
+
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #233165;
+    background-color: #cdccca;
+    border-radius: 0;
+}
+
+.mega-dropdown-menu>li>ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mega-dropdown-menu>li>ul>li {
+    list-style: none;
+}
+
+.mega-dropdown-menu>li>ul>li>a {
+    display: block;
+    color: #222 !important;
+    padding: 3px 5px;
+}
+
+.mega-dropdown-menu>li ul>li>a:hover,
+.mega-dropdown-menu>li ul>li>a:focus {
+    text-decoration: none;
+}
+
+.mega-dropdown-menu .dropdown-header {
+    font-size: 18px;
+    color: #ff3546;
+    padding: 5px 60px 5px 5px;
+    line-height: 30px;
+}
+
+.carousel-control {
+    width: 30px;
+    height: 30px;
+    top: -35px;
+}
+
+.left.carousel-control {
+    right: 30px;
+    left: inherit;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    font-size: 12px;
+    background-color: #fff;
+    line-height: 30px;
+    text-shadow: none;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #233165;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #233165;
+}
+
+
+/*LOGIN*/
+
+.tn-login-button-div .tn-forgot-password-action-left .tn-cancel {
+    background-color: #233165;
+    color: #FFBF5C;
+    border: 2px solid #233165;
+}
+
+.tn-login-button-div .tn-forgot-password-action-left .tn-cancel:hover,
+.tn-login-button-div .tn-forgot-password-action-left .tn-cancel:focus {
+    background-color: #0F1D51;
+    color: #FFBF5C;
+    border: 2px solid #0F1D51;
+}
+
+.tn-login-button-div .col-md-6 input.btn.btn-lg {
+    width: 100%;
+}
+
+.login-container #login-div-container:not(.active) {
+    transform: rotateY(180deg);
+    opacity: 0;
+    z-index: -1;
+    display: none;
+}
+
+.login-container #forgot-password-div-container:not(.active) {
+    transform: rotateY(-180deg);
+    opacity: 0;
+    z-index: -1;
+    display: none;
+}
+
+.tn-dashboard {
+    background: #ffffff;
+    min-height: 1000px;
+    color: black;
+}
+
+.tn-listing-container {
+    background: #ffffff;
+    min-height: 1000px;
+    color: black;
+}
+
+
+/*LOGIN*/
+
+.tn-login-logo {
+    background-color: #FFFFFF;
+    height: 42px;
+    border-radius: 5px;
+}
+
+.tn-our-products {
+    background: #5f9ea0;
+    padding: 38px;
+    border-radius: 50%;
+    border: 1px solid #5f9ea0;
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+}
+
+.tn-login-logo-left {
+    border-right: 0.5px solid #000000;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.tn-login-logo-right {
+    text-align: right;
+    padding: 10px 10px 5px 5px;
+}
+
+.quick-link {
+    margin-top: 35px;
+    text-align: center;
+    margin-left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    margin-right: 0;
+    height: 70px;
+    padding: 10px;
+}
+
+.quick-link a i {
+    display: inline-block;
+    width: 35px;
+    height: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.quick-link .tn-quick-link-logo a {
+    padding: 16px;
+    color: #233165;
+    background-color: white;
+    border-radius: 28px;
+}
+
+.quick-link .login-title {
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #233165;
+}
+
+.quick-link .login-title h3 {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.tn-login-box .tn-login-logo {
+    margin-bottom: 20px;
+}
+
+.tn-login-box .login-title h3 {
+    font-size: 20px;
+}
+
+.header-bar {
+    background: transparent;
+    padding: 1rem 2rem 1.5rem 2rem;
+    display: block;
+}
+
+.grid-content .grid-block {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-bar .logo {
+    float: left;
+}
+
+.tn-login-box {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 10px 28px 50px 28px;
+}
+
+.login-container {
+    margin: 90px auto 0 auto;
+}
+
+.login-title {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+.input-group input {
+    font-size: 12px;
+}
+
+.tn-error {
+    display: none;
+}
+
+.tn-remember-me {
+    margin-top: 16px;
+}
+
+.tn-login-button-div {
+    margin-top: 15px;
+}
+
+.tn-remember-me label {
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.tn-box {
+    border: 4px solid rgba(255, 255, 255, 0.04);
+    padding: 30px;
+    margin-bottom: 5px;
+}
+
+.tn-logo-image {
+    height: 50px;
+}
+
+.input-group-addon {
+    border-radius: 0;
+}
+
+
+/*BEHAVIOUR*/
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-footer .tn-button-field {
+    background-color: #212f66;
+    border-radius: 0;
+    border-color: #212f66;
+    margin-right: 5px;
+    height: 30px;
+    width: 80px;
+    padding: 0;
+}
+
+.modal-footer {
+    padding: 5px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.tn-file-upload {
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+
+.tn-file-upload input {
+    font-size: 10px;
+}
+
+.fas.fa-exclamation-triangle {
+    font-size: 25px;
+}
+
+.popup-content {
+    padding-top: 10px;
+}
+
+.modal-body p {
+    font-size: 12px;
+}
+
+#messageBoxContent,
+#messageBoxTitle,
+#txtPopupContent {
+    margin-bottom: 10px;
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tn-validation-form .row {
+    margin-bottom: 10px;
+}
+
+.disableDropdown {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
