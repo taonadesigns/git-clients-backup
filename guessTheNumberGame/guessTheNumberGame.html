@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guess the Number Game</h1>
+    <p>Try to guess the number between 1 and 100.</p>
+
+    <label for="guess">Your Guess:</label>
+    <input type="number" id="guess" min="1" max="100">
+    <button onclick="checkGuess()">Submit Guess</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Generate a random number between 1 and 100
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        // Counter for the number of attempts
+        let attempts = 0;
+
+        function checkGuess() {
+            const userGuess = parseInt(document.getElementById('guess').value);
+            attempts++;
+
+            const resultElement = document.getElementById('result');
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                resultElement.textContent = 'Please enter a valid number between 1 and 100.';
+            } else if (userGuess === randomNumber) {
+                resultElement.textContent = `Congratulations! You guessed the correct number ${randomNumber} in ${attempts} attempts.`;
+                resultElement.style.color = 'green';
+                disableInput();
+            } else {
+                const hint = userGuess < randomNumber ? 'higher' : 'lower';
+                resultElement.textContent = `Incorrect! Try a ${hint} number.`;
+                resultElement.style.color = 'red';
+            }
+        }
+
+        function disableInput() {
+            document.getElementById('guess').disabled = true;
+            document.querySelector('button').disabled = true;
+        }
+    </script>
+
+</body>
+</html>
