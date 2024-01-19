@@ -1,0 +1,12 @@
+def generate_taona_signature():
+    taona_signature = """
+   _______ _______ _______ 
+  |  __   |   |   |    ___|
+  |__    |       |    ___|
+  |_______|___|___|_______|
+    """
+    return taona_signature
+
+if __name__ == "__main__":
+    taona_signature = generate_taona_signature()
+    print(taona_signature)
